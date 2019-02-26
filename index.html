@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
+<!-- Head -->
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Customized CSS -->
@@ -19,7 +19,7 @@
     <title>Allin Workout Toolkit</title>
   </head>
 
-  <!-- Body -->
+<!-- Body -->
   <body>
     <div class="container-fluid">
     <!-- Nav bar -->
@@ -30,146 +30,46 @@
         </div>
         <ul class="nav navbar-nav mr-auto">
           <li><a class="nav-link carousel-contro" href="#myCarousel" data-slide-to="0">DCC</a></li>
-          <li><a class="nav-link carousel-contro" href="#myCarousel" data-slide-to="1">Page 2</a></li>
+          <li><a class="nav-link carousel-contro" href="#myCarousel" data-slide-to="1">WIP</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Carousel -->
-    <div class="container-fluid">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
+      <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
 
-      <div class="carousel-inner">
+          <div class="carousel-inner">
 
-      <!-- Daily Calories Calculator -->
-        <div class="carousel-item active">
-          <div class="container-fluid padding">
-        <div class="card mx-auto card-spacer" id="ddc">
-          <!--<img class="card-img-top" src="assets/img/card.png">-->
-          <div class="card-body">
-            <div class="card-header"><h2>Daily Calories Calculator</h2></div>
-
-            <div class="row" id="calculator-body">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label>Gender</label>
-                  <select class="form-control" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label>Height</label>
-                  <input type="number" class="form-control" placeholder="cm" id="height">
-                </div>
-
-                <div class="form-group">
-                  <label>Weight</label>
-                  <input type="number" class="form-control" placeholder="kg" id="weight">
-                </div>
-
-              </div>
-
-            <div class="col-lg-6">
-              <div class="form-group">
-                <label>Age</label>
-                <input type="number" class="form-control" id="age">
-              </div>
-
-              <div class="form-group">
-                <label>Activity Level</label>
-                <div class="form-check" id="ac">
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="1"> 1 <br />
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="1.5"> 1.5 <br />
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="2"> 2 <br />
-                </div>
-              </div>
-
-              <button class="btn btn-primary" id="calculate" type="submit">Calculate!</button>
-              <br />
-              <hr />
-              <!-- Result -->
-              <div class="alert alert-info" id="res">
-                Your Daily Calories result will be shown here!
+          <!-- Daily Calories Calculator -->
+            <div class="carousel-item active">
+              <div class="container-fluid padding">
+                <div w3-include-html="contents/dcc_card.html"></div>
               </div>
             </div>
 
-            </div> <!-- row end -->
-        </div> <!-- card body end -->
-
-        </div>
-      </div>
-        </div>
-
-        <div class="carousel-item" id="dcc2">
-          <div class="container-fluid padding">
-        <div class="card mx-auto card-spacer">
-          <!--<img class="card-img-top" src="assets/img/card.png">-->
-          <div class="card-body">
-            <div class="card-header"><h2>Daily Calories Calculator</h2></div>
-
-            <div class="row" id="calculator-body">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label>Gender</label>
-                  <select class="form-control" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label>Height</label>
-                  <input type="number" class="form-control" placeholder="cm" id="height">
-                </div>
-
-                <div class="form-group">
-                  <label>Weight</label>
-                  <input type="number" class="form-control" placeholder="kg" id="weight">
-                </div>
-
+            <!-- Weekly Intake Plan -->
+            <div class="carousel-item">
+              <div class="container-fluid padding">
+                <div w3-include-html="contents/wip_card.html"></div>
               </div>
-
-            <div class="col-lg-6">
-              <div class="form-group">
-                <label>Age</label>
-                <input type="number" class="form-control" id="age">
-              </div>
-
-              <div class="form-group">
-                <label>Activity Level</label>
-                <div class="form-check" id="ac">
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="1"> 1 <br />
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="1.5"> 1.5 <br />
-                  <input class="form-check-input" type="radio" name="RadioOptions" value="2"> 2 <br />
-                </div>
-              </div>
-
-              <button class="btn btn-primary" id="calculate" type="submit">Calculate!</button>
-              <br />
-              <hr />
-              <!-- Result -->
-              <p id="res"></p>
             </div>
 
-            </div> <!-- row end -->
-        </div> <!-- card body end -->
-
-        </div>
-      </div>
-        </div>
+          </div>
+        </div> <!-- my end -->
 
       </div>
-      </div> <!-- my end -->
-
     </div>
-  </div>
 
   </body>
+
+
+  <script>includeHTML();</script>
+  <!--<script>alert($("#insufficiency").val());</script>-->
+
 </html>
