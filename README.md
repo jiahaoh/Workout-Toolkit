@@ -2,6 +2,8 @@
 Using basic HTML5, CSS, JavaScript to build a website toolkit for gym workout.
 Click [here](http://jiahaoh.com/Workout-Toolkit/) to view the site.
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/jiahaoh/Workout-Toolkit/graphs/commit-activity)
+
 ## What I have learned
 - Basic HTML5, CSS, JavaScript
 
